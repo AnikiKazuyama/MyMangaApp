@@ -198,3 +198,7 @@
     font-size: 20px;
     margin-bottom: 8px;
 }
+
+.card__genres-etc > p{
+    margin-bottom: 3px;
+}
