@@ -24,6 +24,7 @@
   min-width: 1280px;
   height: 45px;
   background-color: #2f364a;
+  z-index: 200;
 }
 
 .header-dots,
