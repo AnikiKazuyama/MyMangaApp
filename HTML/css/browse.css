@@ -1,0 +1,13 @@
+/**
+*  @author Surton
+*  @date 16.07.2018
+*  @section browse
+*/
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: calc(100% - 250px);
+  margin: 45px 0 0 250px;
+}

@@ -1,0 +1,25 @@
+/**
+*  @author Surton
+*  @date 16.07.2018
+*  @section fonts
+*/
+
+@font-face{
+  font-family: 'LabGrotesque';
+  src: url("../fonts/LabGrotesque-Regular.eot");
+	src: url("../fonts/LabGrotesque-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/LabGrotesque-Regular.woff") format("woff"),
+	url("../fonts/LabGrotesque-Regular.woff2") format('woff2');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+  font-family: 'LabGrotesque';
+  src: url("../fonts/LabGrotesque-Bold.eot");
+	src: url("../fonts/LabGrotesque-Bold.eot")format("embedded-opentype"),
+	url("../fonts/LabGrotesque-Bold.woff") format("woff"),
+	url("../fonts/LabGrotesque-Bold.woff2") format('woff2');
+	font-style: bold;
+	font-weight: bold;
+}
