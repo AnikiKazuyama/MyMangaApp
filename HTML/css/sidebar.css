@@ -124,11 +124,13 @@
 }
 
 .sidebar-sections__item {
+  display: block;
   position: relative;
   padding: 15px 0 15px 25px;
 }
 
 .sidebar-sections__item a {
+  display: block;
   text-decoration: none;
   color: #78829d;
   -webkit-transition: color .2s;
@@ -141,6 +143,7 @@
 }
 
 .sidebar-nav__item.active {
+  display: block;
   background-color: #15a4fa;
   color: #fff;
   cursor: default;
