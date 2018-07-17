@@ -15,12 +15,13 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     padding: 50px 20px;
+    margin: 0 -15px;
 }
 
 .card {
     position: relative;
-    width: calc(16.66666% - 15px );
-    margin-right: 15px;
+    width: calc(16.66666% - 30px );
+    margin: 0 15px;
     margin-bottom: 25px;
     background-image: url('https://img1.ak.crunchyroll.com/i/spire1/863ba423b729f58769a4004834e5554e1491069428_full.jpg');
     background-repeat: no-repeat;
