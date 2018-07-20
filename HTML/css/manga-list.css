@@ -205,7 +205,6 @@
           backface-visibility: hidden;
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
-  background-image: url('../img/reading-white.svg');
   opacity: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
