@@ -1,0 +1,44 @@
+.input {
+  display: flex;
+  height: 70px;
+
+  background-color: #ebedf1;
+}
+
+.input__icon {
+  width: 70px;
+  height: 70px;
+
+  background-position: 50% 50%;
+  background-size: 30px 39px; 
+  background-repeat: no-repeat;
+  background-color: #dadfea;
+}
+
+.input__icon--login {
+  background-image: url('../img/login__icon.png');
+}
+
+.input__icon--password {
+  background-image: url('../img/password__icon.png');
+}
+
+.input__inner {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.input__inner > input,
+.input__inner > input::placeholder {
+  font-size: inherit;
+  color: inherit;
+}
+
+.input__inner > input{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+
+  padding: 20px;
+
+  border: none; 
+
+  text-align: center;
+
+  background-color: gray;
+
+  transition-property: background-color;
+  transition-duration	: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.button:focus {
+  outline: 3px solid gainsboro;
+}
+
+.button--blue {
+  color: white;
+  background-color: #15a4fa;
+}
+
+.button--blue:focus {
+  outline-color: #5ab9f3;
+}
+
+.button--blue:hover {
+  background-color: #0b6aa2;
+}

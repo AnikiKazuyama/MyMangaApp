@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>MyMangaApp</title>
+
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/clear.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/sidebar.css"/>
+  <link rel="stylesheet" href="css/browse.css"/>
+  <link rel="stylesheet" href="css/main/main-header.css"/>
+  <link rel="stylesheet" href="css/manga-list.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+  <!-- modal BEGIN -->
+  <div class="modal">
+    <div class="modal__dialog modal__dialog--center">
+      <div class="modal__close"></div>
+      <div class="login">
+        <form action="">
+          
+          <div class="login__inputs-wrap">
+            <div class="input login__input">
+              <div class="input__icon input__icon--login"></div>
+              <div class='input__inner'>
+                <input type="text" placeholder="E-mail">
+              </div>
+            </div>
+      
+            <div class="input login__input">
+              <div class="input__icon input__icon--password"></div>
+              <div class='input__inner'>
+                <input type="text" placeholder="Password">
+              </div>
+            </div>
+          </div>
+
+          <div class="login__submit-wrap">
+            <button class="login__submit button button--blue">Войти</button>
+          </div>
+
+          <div class="login__bottom">
+            <div class='login__bottom-inner'>
+              <a>Регистрация</a>
+              <a>Забыли пароль?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal END -->
+
+
+  <!-- site-header BEGIN -->
+  <header class="site-header">
+    <div class="header-dots"></div>
+    <a href="index.html" class="header-logo">MyMangaApp</a>
+    <div class="header-menu">
+      <nav class="header-menu__nav">
+        <a href="" class="header-menu__nav-item">Помощь</a>
+        <a href="" class="header-menu__nav-item">Поддержи нас</a>
+      </nav>
+      <div class="header-menu__profile">
+        <div class="header-menu__profile-avatar" style="background-image: url(img/default-avatar.svg)"></div>
+        <div class="header-menu__profile-container">
+          <div class="header-menu__profile-overflow">
+            <span class="header-menu__profile-name">Alexander Erofeev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- site-header END -->
+
+  <!-- site-sidebar BEGIN -->
+  <aside class="site-sidebar">
+    <div class="site-sidebar__item">
+      <a href="" class="site-sidebar__item-continue">
+        <span>Продолжить</span>
+      </a>
+    </div>
+    <div class="site-sidebar__item padding-off">
+      <nav class="sidebar-nav">
+        <a href="" class="sidebar-nav__item reading">Читаемые</a>
+        <a href="" class="sidebar-nav__item browse active">Каталог</a>
+        <a href="" class="sidebar-nav__item favorite">Избранное</a>
+        <a href="" class="sidebar-nav__item news">Новости</a>
+        <a href="" class="sidebar-nav__item history">История</a>
+      </nav>
+    </div>
+    <div class="site-sidebar__item">
+      <nav class="sidebar-sections">
+        <span class="sidebar-sections__item">
+          <div class="sidebar-sections__item-circle" style="background-color: #e64c66;"></div>
+          <a href="">Повседневность</a>
+        </span>
+        <span class="sidebar-sections__item">
+          <div class="sidebar-sections__item-circle" style="background-color: #ffab00;"></div>
+          <a href="">Школа</a>
+        </span>
+        <span class="sidebar-sections__item">
+          <div class="sidebar-sections__item-circle" style="background-color: #00bfdd;"></div>
+          <a href="">Мистика</a>
+        </span>
+        <span class="sidebar-sections__item">
+          <div class="sidebar-sections__item-circle" style="background-color: #7874cf;"></div>
+          <a href="">Триллер</a>
+        </span>
+      </nav>
+    </div>
+  </aside>
+  <!-- site-sidebar END -->
+
+  <!-- site-main BEGIN -->
+  <main class="site-main">
+
+    <!-- main-header BEGIN -->
+    <section class="main-header">
+      <span class="main-header__title">Каталог манги</span>
+      <div class="main-header__filters">
+        <nav class="main-header__filters-nav">
+          <a href="">Всё</a>
+          <a href="" class="active">По рейтингу</a>
+          <a href="">По популярности</a>
+          <a href="">По дате обновления</a>
+        </nav>
+        <form class="main-header__filters-search">
+          <input type="text" placeholder="Поиск по ключевым словам">
+          <button type="submit" class="search-ico"></button>
+        </form>
+      </div>
+    </section>
+    <!-- main-header END -->
+
+    <!-- manga-list BEGIN -->
+    <section class="manga-list">
+      <article class="card">
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article>      
+
+      <article class="card">
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article> 
+
+      <article class="card"></div>
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article> 
+
+      <article class="card">
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article> 
+
+      <article class="card">
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article> 
+
+      <article class="card">
+        <div class="card-ratio"></div>
+        <div class="card__content">
+            <div class="card__mini-info--top card__mini-info">
+                <div class="card__chapters card__item card__item-left">300 глав</div>
+                <div class="card__rating card__item card__item-right">
+                  <span class="card__rating-score">6/10</span>
+                </div>
+            </div>
+            <div class="card__description">
+              <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+              <div class="card__title">Boku no Hero Academa</div>
+              <div class="card__genres-etc">
+                <p>category: School</p>
+                <p>category: School</p>
+                <p>category: School</p>
+              </div>
+            </div>
+            <div class="card__mini-info--bottom card__mini-info">
+              <a href="" class="card__details card__item card__item-left">Подробнее</a>
+              <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+            </div>
+        </div>
+      </article> 
+      
+      <article class="card">
+        <div class="card-ratio"></div>
+          <div class="card__content">
+              <div class="card__mini-info--top card__mini-info">
+                  <div class="card__chapters card__item card__item-left">300 глав</div>
+                  <div class="card__rating card__item card__item-right">
+                    <span class="card__rating-score">6/10</span>
+                  </div>
+              </div>
+              <div class="card__description">
+                <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+                <div class="card__title">Boku no Hero Academa</div>
+                <div class="card__genres-etc">
+                  <p>category: School</p>
+                  <p>category: School</p>
+                  <p>category: School</p>
+                </div>
+              </div>
+              <div class="card__mini-info--bottom card__mini-info">
+                <a href="" class="card__details card__item card__item-left">Подробнее</a>
+                <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+              </div>
+          </div>
+        </article> 
+  
+        <article class="card">
+          <div class="card-ratio"></div>
+          <div class="card__content">
+              <div class="card__mini-info--top card__mini-info">
+                  <div class="card__chapters card__item card__item-left">300 глав</div>
+                  <div class="card__rating card__item card__item-right">
+                    <span class="card__rating-score">6/10</span>
+                  </div>
+              </div>
+              <div class="card__description">
+                <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+                <div class="card__title">Boku no Hero Academa</div>
+                <div class="card__genres-etc">
+                  <p>category: School</p>
+                  <p>category: School</p>
+                  <p>category: School</p>
+                </div>
+              </div>
+              <div class="card__mini-info--bottom card__mini-info">
+                <a href="" class="card__details card__item card__item-left">Подробнее</a>
+                <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+              </div>
+          </div>
+        </article> 
+  
+        <article class="card">
+          <div class="card-ratio"></div>
+          <div class="card__content">
+              <div class="card__mini-info--top card__mini-info">
+                  <div class="card__chapters card__item card__item-left">300 глав</div>
+                  <div class="card__rating card__item card__item-right">
+                    <span class="card__rating-score">6/10</span>
+                  </div>
+              </div>
+              <div class="card__description">
+                <div class="card__book-icon card__icon"><div class="card__icon-ratio"></div></div>
+                <div class="card__title">Boku no Hero Academa</div>
+                <div class="card__genres-etc">
+                  <p>category: School</p>
+                  <p>category: School</p>
+                  <p>category: School</p>
+                </div>
+              </div>
+              <div class="card__mini-info--bottom card__mini-info">
+                <a href="" class="card__details card__item card__item-left">Подробнее</a>
+                <div title="Просмотров" class="card__views card__item card__item-right">115.000</div>
+              </div>
+          </div>
+        </article> 
+        
+    </section>
+    <!-- manga-list END -->
+
+  </main>
+  <!-- site-main END -->
+
+</body>
+</html>
