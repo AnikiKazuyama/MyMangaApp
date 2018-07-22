@@ -22,6 +22,12 @@
 
 .login__input {
   color: #98a0b8;
+  transition: 0.5s;
+}
+
+.login__input--hidden {
+  opacity: 0;
+  margin-bottom: -70px;
 }
 
 .login__input:last-child {

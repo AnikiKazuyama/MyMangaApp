@@ -5,6 +5,10 @@
   background-color: #ebedf1;
 }
 
+.input--focused {
+  outline: 2px solid #b1b1bdfa;
+}
+
 .input__icon {
   width: 70px;
   height: 70px;
