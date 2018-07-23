@@ -9,14 +9,15 @@
 
   display: block;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #98a0b8;
+  opacity: .7;
 
   z-index: 19;
 }
 
 .modal__dialog {
   position: fixed;
-  box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 4px rgba(47, 54, 74, .7);
   z-index: 20;
 }
 

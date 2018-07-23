@@ -5,21 +5,29 @@
 */
 
 @font-face{
-  font-family: 'LabGrotesque';
-  src: url("../fonts/LabGrotesque-Regular.eot");
-	src: url("../fonts/LabGrotesque-Regular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/LabGrotesque-Regular.woff") format("woff"),
-	url("../fonts/LabGrotesque-Regular.woff2") format('woff2');
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Light.ttf");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 100;
 }
 
 @font-face{
-  font-family: 'LabGrotesque';
-  src: url("../fonts/LabGrotesque-Bold.eot");
-	src: url("../fonts/LabGrotesque-Bold.eot")format("embedded-opentype"),
-	url("../fonts/LabGrotesque-Bold.woff") format("woff"),
-	url("../fonts/LabGrotesque-Bold.woff2") format('woff2');
-	font-style: bold;
-	font-weight: bold;
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.ttf");
+	font-style: normal;
+	font-weight: 600;
 }

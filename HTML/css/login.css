@@ -22,10 +22,11 @@
 
 .login__input {
   color: #98a0b8;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
-.login__input--hidden {
+.input.login__input--hidden {
+  display: none;
   opacity: 0;
   margin-bottom: -70px;
 }
@@ -52,6 +53,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 16px;
   
   color: #606d92;
 }
@@ -61,12 +64,21 @@
 }
 
 .login__bottom-inner > a {
-  padding-right: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 16px;
+
+  color: #606d92;
+}
+
+.login__bottom-inner > a:hover {
+  border-bottom: 1px dotted #606d92;
 }
 
 .login__bottom-inner > a:last-child {
-  padding-right: 0;
-  padding-left: 10px;
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .login__bottom-inner > a:not(:last-child)::after {
@@ -74,12 +86,11 @@
 
   position: absolute;
 
-  right: 0;
+  right: -10px;
+  top: 0;
 
   width: 1px;
   height: calc(1em + 4px);
-
-  transform: translateY(-25%);
 
   background-color: #606d92;
 
