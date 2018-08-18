@@ -1,0 +1,203 @@
+/**
+*  @author Surton
+*  @date 16.07.2018
+*  @section site-header
+*/
+
+.site-header {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 1280px;
+  height: 45px;
+  background-color: #2f364a;
+  z-index: 200;
+}
+
+.header-dots,
+.header-dots:before,
+.header-dots:after {
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.header-dots {
+  position: relative;
+  margin-left: 50px;
+  background-color: #fabf00;
+}
+
+.header-dots:before,
+.header-dots:after {
+  content: '';
+  position: absolute;
+}
+
+.header-dots:before {
+  left: -17px;
+  background-color: #e76847;
+}
+
+.header-dots:after {
+  right: -17px;
+  background-color: #52bea6;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #78829d;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header-logo:before {
+  content: '';
+  position: absolute;
+  left: -23px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../../../Assets/img/anime-app.svg) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+}
+
+.header-menu,
+.header-menu__nav,
+.header-menu__profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header-menu__nav {
+  padding: 0 15px;
+}
+
+.header-menu__profile-avatar {
+  min-width: 30px;
+  min-height: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.header-menu__profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 160px;
+  max-width: 350px;
+  height: 100%;
+  padding: 0 15px;
+  background-color: #15a4fa;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-menu__profile-container {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  max-width: 260px;
+  margin-right: 20px;
+}
+
+.header-menu__profile-overflow {
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-menu__profile-container:after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: url(../../../Assets/img/down-arrow.svg) no-repeat center;
+  -webkit-background-size: 90% 90%;
+          background-size: 90%;
+}
+
+.header-menu__profile-name {
+  font-size: 14px;
+}
+
+.header-menu__nav-item {
+  color: #78829d;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s;
+}
+
+.header-menu__nav-item:hover {
+  color: #a9b2c8
+}
+
+.header-menu__nav-item:not(:last-child) {
+  position: relative;
+  margin-right: 25px;
+}
+
+.header-menu__nav-item:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #1f2635;
+}
