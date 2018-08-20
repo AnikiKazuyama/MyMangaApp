@@ -76,7 +76,7 @@
           transform: translateY(-52%) rotate(-90deg);
   width: 17px;
   height: 17px;
-  background: url(../../../Assets/img/menu/continue.svg) no-repeat center;
+  background: url(../../../Assets/img/icons/dices.svg) no-repeat center;
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   -webkit-transition: left .2s;

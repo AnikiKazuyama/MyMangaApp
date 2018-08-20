@@ -14,7 +14,11 @@ class Header extends Component {
   render() {
     return (
       <header className="site-header">
-        <div className="header-dots"></div>
+        <div className="header-dots">
+          <div class="dot" />
+          <div class="dot" />
+          <div class="dot" />
+        </div>
         <Link to="/" className="header-logo">{ common.logo }</Link>
         <div className="header-menu">
           <nav className="header-menu__nav">

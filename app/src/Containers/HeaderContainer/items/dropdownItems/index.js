@@ -12,6 +12,11 @@ const items = [
   {
     name: 'Настройки', 
     link: '/settings' 
+  },
+
+  {
+    name: 'Выйти', 
+    link: '/logout' 
   }
 ];
 

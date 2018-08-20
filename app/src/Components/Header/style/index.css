@@ -4,6 +4,12 @@
 *  @section site-header
 */
 
+@keyframes animated-dots {
+  0%   { transform: translateY(0) }
+  50%  { transform: translateY(-5px) }
+  100%  { transform: translateY(0) }
+}
+
 .site-header {
   position: fixed;
   display: -webkit-box;
@@ -27,35 +33,39 @@
   z-index: 200;
 }
 
-.header-dots,
-.header-dots:before,
-.header-dots:after {
+.header-dots {
+  display: flex;
+  position: relative;
+  margin-left: 50px;;
+}
+
+.header-dots .dot {
   width: 11px;
   height: 11px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: animated-dots;
+  animation-duration: 0.5s;
 }
 
-.header-dots {
-  position: relative;
-  margin-left: 50px;
-  background-color: #fabf00;
+.header-dots .dot:not(:first-child) {
+  margin-left: 5px;
 }
 
-.header-dots:before,
-.header-dots:after {
-  content: '';
-  position: absolute;
-}
-
-.header-dots:before {
-  left: -17px;
+.dot:nth-child(1) {
   background-color: #e76847;
+  animation-delay: 3s;
 }
 
-.header-dots:after {
-  right: -17px;
+.dot:nth-child(2) {
+  background-color: #fabf00;
+  animation-delay: 3.1s;
+}
+
+.dot:nth-child(3) {
   background-color: #52bea6;
+  animation-delay: 3.2s;
 }
 
 .header-logo {

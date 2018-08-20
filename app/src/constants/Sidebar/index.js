@@ -1,3 +1,3 @@
 export default {
-  buttonSidebar: 'Продолжить'
+  buttonSidebar: 'Мне повезет!'
 };
